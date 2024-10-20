@@ -1,0 +1,249 @@
+* {
+    padding: 0;
+    margin: 0;
+  }
+  
+  body {
+    font-family: Sans Serif;
+  }
+  
+  .allHeader {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    min-height: 8vh;
+  /*   height: 10%; */
+    padding: 10px;
+    margin: 10px 10px 0px 10px;
+    background-color: grey;
+  }
+  
+  .logo {
+      width: 120px;
+      height: 60px;
+  }
+  
+  .headerLeftPart {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 50%;
+  }
+  
+  .headerRightPart {
+    display: flex;
+    justify-content: flex-end;
+    width: 50%;
+  }
+  
+  .navList {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navListItem {
+    text-align: center;
+    margin: 0px 10px;
+  }
+  
+  .navListItem a {
+    text-decoration: none;
+    color: #ffffd8;
+    font-size: 16px;
+  }
+  
+  .navListItem a:hover {
+    text-decoration: underline;
+    color: #ff9aa2;
+  }
+  
+  main {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .hero {
+    background-image: url("https://img.freepik.com/free-vector/3d-effect-question-background_52683-30325.jpg");
+    min-height: 82vh;
+  /*   height: 100%; */
+    background-size: cover;
+    /* background-position: center;
+      
+      
+      position: relative; */
+    margin: 10px;
+    padding: 10px;
+    /*   display: flex; */
+    /*   flex-wrap: wrap; */
+    /*   flex-direction: column; */
+    /*   justify-content: center;
+      align-content: center; */
+  }
+  
+  .hero-items {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 80px;
+  }
+  
+  .hero-text {
+    text-align: center;
+    color: #ffffd8;
+    font-size: 22px;
+  }
+  
+  .hero-input {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+    color: #ffffd8;
+    font-size: 20px;
+  }
+  
+  #person-name {
+    background-color: lightgrey;
+    height: 35px;
+    width: 60%;
+    align-self: center;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+  }
+  
+  .startTestButton {
+    padding: 12px 26px;
+    margin: 10px 0px 30px 0px;
+    background-color: #ffffd8;
+    border: none;
+    border-radius: 10px;
+    color: grey;
+    box-shadow: 2px 2px 8px #ff9aa2;
+    font-size: 16px;
+  }
+  
+  .startTestButton:hover {
+    background-color: #ff9aa2;
+    color: dimgray;
+    box-shadow: 2px 2px 8px #ffffd8;
+    /*   padding: 10px 20px;
+      font-size: 14.5px; */
+    transition: 0.2s;
+  }
+  
+  .tests {
+    display: flex;
+    justify-content: space-evenly;
+    /* background-color: #FF9AA2;
+      opacity: 80%;
+      padding: 10px 0px;
+      margin: 15px 0px; */
+  }
+  
+  .tests-item-border {
+      display: flex;
+      justify-content: center;
+    background-color: #ff9aa2;
+    width: 300px;
+    height: 180px;
+    opacity: 80%;
+    padding: 10px 10px;
+    margin: 0px 15px 15px 15px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 8px #ffffd8;
+  }
+  
+  .tests-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    padding: 50px 60px;
+    background-color: #ff9aa2;
+    color: #ffffd8;
+    font-size: 20px;
+    opacity: 80%;
+    border: 2px solid #ffffd8;
+    border-radius: 10px;
+  }
+  
+  @keyframes flipY {
+    100% {
+      transform: rotateY(360deg);
+    }
+  }
+  
+  @keyframes flipX {
+    100% {
+      transform: rotateX(360deg);
+    }
+  }
+  
+  .tests-item:hover h2 {
+    animation-name: flipX;
+    animation-duration: 1s;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+  }
+  
+  .tests-item:hover {
+    animation-name: flipY;
+    animation-duration: 0.8s;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    border-radius: 60px;
+  }
+  
+  .burger {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffd8 ;
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    display: none;
+  }
+  
+  .line {
+    margin: 2px;
+    background-color: #ff9aa2;
+    width: 16px;
+    height: 3px;
+  }
+  
+  @media (max-width: 600px) {
+    .tests {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .tests-item-border {
+      margin-bottom: 15px;
+    }
+  
+  /*   body {
+      background-color: lightblue;
+    } */
+    .navListItem a {
+      display: none;
+    }
+    .burger {
+      display: flex;
+    }
+    nav {
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+  

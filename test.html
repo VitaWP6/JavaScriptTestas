@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="test_style.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <footer>
+        <div class="allHeader">
+          <div class="headerLeftPart">
+            <img src="image.png" alt="Logotipas" class="logo" />
+          </div>
+          <div class="headerRightPart">
+            <nav>
+              <ul class="navList">
+                <il class="navListItem"
+                  ><a href="index.html">Pradžia</a
+                  ></il>
+                <il class="navListItem"
+                  ><a href="https://www.w3schools.com/html/default.asp" target="_blank"
+                    >HTML teorija</a
+                  ></il
+                >
+                <il class="navListItem"
+                  ><a href="https://www.w3schools.com/css/default.asp" target="_blank"
+                    >CSS teorija</a
+                  ></il
+                >
+                <il class="navListItem"
+                  ><a href="https://www.w3schools.com/js/default.asp" target="_blank"
+                    >JAVASCRIPT teorija</a
+                  ></il
+                >
+              </ul>
+              <div class="burger">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>   
+    </div>
+            </nav>
+          </div>
+        </div>
+      </footer>
+    <form>
+        <h2 class="question">1. Kurie elementai yra blokiniai?</h2>
+        <div class="answerList">
+          <input type="radio" id="answerOne" name="questionOne" value="One">
+          <label for="answerOne">One</label><br>
+          <input type="radio" id="answerTwo" name="questionOne" value="Two">
+          <label for="answerTwo">Two</label><br>
+          <input type="radio" id="answerThree" name="questionOne" value="Three">
+          <label for="answerThree">Three</label>
+        </div>
+        <button id="answerSubmit" type="button" onclick="display1()">Patvirtinti</button>
+        <p id="disp1" style="color:red; font-size:18px; font-weight:bold;"></p>
+
+        <h2 class="question">2. Kuri HTML failo struktūra yra teisinga?</h2>
+        <div class="answerList">
+          <input type="radio" id="answerOne-2" name="questionTwo" value="One-2">
+          <label for="answerOne-2"><img src="answer_1.png" alt="answerOne-2"></label>
+          <input type="radio" id="answerTwo-2" name="questionTwo" value="Two-2">
+          <label for="answerTwo-2"><img src="answer_2.png" alt="answerTwo-2"></label>
+          <input type="radio" id="answerThree-2" name="questionTwo" value="Three-2">
+          <label for="answerThree-2"><img src="answer_3.png" alt="answerThree-2"></label>
+        </div>  
+        <button id="answerSubmit2" type="button" onclick="display2()">Patvirtinti</button>
+        <p id="disp2" style="color:red; font-size:18px; font-weight:bold;"></p>
+
+        <h2 class="question">3. Kurie iš šių elementų yra block tipo?</h2>
+        <div class="answerList">
+          <input type="radio" id="answerOne-3" name="questionThree" value="One-3">
+          <label for="answerOne-3">p, div, ul</label><br>
+          <input type="radio" id="answerTwo-3" name="questionThree" value="Two-3">
+          <label for="answerTwo-3">a, div, h1</label><br>
+          <input type="radio" id="answerThree-3" name="questionThree" value="Three-3">
+          <label for="answerThree-3">p, img, h1</label>
+        </div>
+        <button id="answerSubmit3" type="button" onclick="display3()">Patvirtinti</button>
+        <p id="disp3" style="color:red; font-size:18px; font-weight:bold;"></p>
+
+        <h2 class="question">4. Kuris HTML elemetas neturi uždarymo tago?</h2>
+        <div class="answerList">
+          <input type="radio" id="answerOne-4" name="questionFour" value="One-4">
+          <label for="answerOne-4">p</label><br>
+          <input type="radio" id="answerTwo-4" name="questionFour" value="Two-4">
+          <label for="answerTwo-4">div</label><br>
+          <input type="radio" id="answerThree-4" name="questionFour" value="Three-4">
+          <label for="answerThree-4">br</label>
+        </div>  
+        <button id="answerSubmit4" type="button" onclick="display4()">Patvirtinti</button>
+        <p id="disp4" style="color:red; font-size:18px; font-weight:bold;"></p>
+
+        <h2 class="question">5. Kuri CSS savybė pakeičia fono spalvą?</h2>
+        <div class="answerList">
+          <input type="radio" id="answerOne-5" name="questionFive" value="One-5">
+          <label for="answerOne-5">color-background</label><br>
+          <input type="radio" id="answerTwo-5" name="questionFive" value="Two-5">
+          <label for="answerTwo-5">background-color</label><br>
+          <input type="radio" id="answerThree-5" name="questionFive" value="Three-5">
+          <label for="answerThree-5">background</label>
+        </div>  
+        <button id="answerSubmit5" type="button" onclick="display5()">Patvirtinti</button>
+        <p id="disp5" style="color:red; font-size:18px; font-weight:bold;"></p>
+
+        <h2 class="question">6. Kuri savybė sukuria erdvę elemento viduje?</h2>
+        <div class="answerList">
+          <input type="radio" id="answerOne-6" name="questionSix" value="One-6">
+          <label for="answerOne-6">padding</label><br>
+          <input type="radio" id="answerTwo-6" name="questionSix" value="Two-6">
+          <label for="answerTwo-6">margin</label><br>
+          <input type="radio" id="answerThree-6" name="questionSix" value="Three-6">
+          <label for="answerThree-6">border</label>
+        </div>  
+        <button id="answerSubmit6" type="button" onclick="display6()">Patvirtinti</button>
+        <p id="disp6" style="color:red; font-size:18px; font-weight:bold;"></p>
+
+        <h2 class="question">7. Kuri savybė suapvalina rėmelių kampus?</h2>
+        <div class="answerList">
+          <input type="radio" id="answerOne-7" name="questionSeven" value="One-7">
+          <label for="answerOne-7">border-circle</label><br>
+          <input type="radio" id="answerTwo-7" name="questionSeven" value="Two-7">
+          <label for="answerTwo-7">border-round</label><br>
+          <input type="radio" id="answerThree-7" name="questionSeven" value="Three-7">
+          <label for="answerThree-7">border-radius</label>
+        </div>  
+        <button id="answerSubmit7" type="button" onclick="display7()">Patvirtinti</button>
+        <p id="disp7" style="color:red; font-size:18px; font-weight:bold;"></p>
+
+        <h2 class="question">8. Kuris yra JavaScript kintamasis?</h2>
+        <div class="answerList">
+          <input type="radio" id="answerOne-8" name="questionEight" value="One-8">
+          <label for="answerOne-8">let</label><br>
+          <input type="radio" id="answerTwo-8" name="questionEight" value="Two-8">
+          <label for="answerTwo-8">body</label><br>
+          <input type="radio" id="answerThree-8" name="questionEight" value="Three-8">
+          <label for="answerThree-8">img</label>
+        </div>  
+        <button id="answerSubmit8" type="button" onclick="display8()">Patvirtinti</button>
+        <p id="disp8" style="color:red; font-size:18px; font-weight:bold;"></p>
+
+        <h2 class="question">9. Koks metodas naudojamas norint pasiekti elementą pagal jo ID?</h2>
+        <div class="answerList">
+          <input type="radio" id="answerOne-9" name="questionNine" value="One-9">
+          <label for="answerOne-9">querySelector()</label><br>
+          <input type="radio" id="answerTwo-9" name="questionNine" value="Two-9">
+          <label for="answerTwo-9">getElementById()</label><br>
+          <input type="radio" id="answerThree-9" name="questionNine" value="Three-9">
+          <label for="answerThree-9">getElementsByTagName()</label>
+        </div>  
+        <button id="answerSubmit9" type="button" onclick="display9()">Patvirtinti</button>
+        <p id="disp9" style="color:red; font-size:18px; font-weight:bold;"></p>
+
+        <h2 class="question">10. Kuris masyvo aprašymas yra teisingas?</h2>
+        <div class="answerList">
+          <input type="radio" id="answerOne-10" name="questionEight" value="One-10">
+          <label for="answerOne-10">const cars = ("Saab", "Volvo", "BMW");</label><br>
+          <input type="radio" id="answerTwo-10" name="questionEight" value="Two-10">
+          <label for="answerTwo-10">const cars = ["Saab", "Volvo", "BMW"];</label><br>
+          <input type="radio" id="answerThree-10" name="questionEight" value="Three-10">
+          <label for="answerThree-10">const cars = {"Saab", "Volvo", "BMW"};</label>
+        </div>  
+        <button id="answerSubmit10" type="button" onclick="display10()">Patvirtinti</button>
+        <p id="disp10" style="color:red; font-size:18px; font-weight:bold;"></p>
+
+        <a class="endButton" href="result.html">
+            <button type="button" id="endButton" onclick="countResult()">Baigti</button>
+        </a>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>

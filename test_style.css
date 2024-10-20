@@ -1,0 +1,51 @@
+form {
+    margin: 10px;
+    padding: 10px;
+    border: none;
+    background-color: rgba(128, 128, 128, 0.419);
+}
+
+.question {
+    padding: 10px 0px;
+    color: rgb(65, 64, 64);
+}
+
+.answerList {
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 18px;
+    color: rgb(65, 64, 64);
+    /* background-color: #ffffd883 ; */
+    background-color: #ff9aa270;
+    border-radius: 8px;
+}
+
+form button {
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 8px;
+    background-color: #ffffd883;
+    color: rgb(65, 64, 64);
+    box-shadow: 2px 2px 8px #ff9aa2;
+}
+
+form button:hover {
+    cursor: pointer;
+}
+
+.endButton {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.endButton button {
+    padding: 15px 50px;
+    font-size: 20px;
+    box-shadow: 2px 2px 8px #ff9aa2;
+}
+
+.endButton button:hover {
+    cursor: pointer;
+}
