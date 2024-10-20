@@ -1,58 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="test_style.css">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
-</head>
-<body>
+    <title>Testas</title>
+  </head>
+  <body>
     <footer>
-        <div class="allHeader">
-          <div class="headerLeftPart">
-            <img src="image.png" alt="Logotipas" class="logo" />
-          </div>
-          <div class="headerRightPart">
-            <nav>
-              <ul class="navList">
+      <div class="allHeader">
+        <div class="headerLeftPart">
+          <img src="image.png" alt="Logotipas" class="logo" />
+        </div>
+        <div class="headerRightPart">
+          <nav>
+            <ul class="navList">
+              <il class="navListItem"
+              ><a href="index.html">Pradžia</a
+                ></il>
                 <il class="navListItem"
-                  ><a href="index.html">Pradžia</a
-                  ></il>
-                <il class="navListItem"
-                  ><a href="https://www.w3schools.com/html/default.asp" target="_blank"
-                    >HTML teorija</a
-                  ></il
+                ><a href="https://www.w3schools.com/html/default.asp" target="_blank"
+                >HTML teorija</a
+                ></il
                 >
                 <il class="navListItem"
-                  ><a href="https://www.w3schools.com/css/default.asp" target="_blank"
-                    >CSS teorija</a
-                  ></il
+                ><a href="https://www.w3schools.com/css/default.asp" target="_blank"
+                >CSS teorija</a
+                ></il
                 >
                 <il class="navListItem"
-                  ><a href="https://www.w3schools.com/js/default.asp" target="_blank"
-                    >JAVASCRIPT teorija</a
-                  ></il
+                ><a href="https://www.w3schools.com/js/default.asp" target="_blank"
+                >JAVASCRIPT teorija</a
+                ></il
                 >
               </ul>
               <div class="burger">
-      <div class="line"></div>
-      <div class="line"></div>
-      <div class="line"></div>   
-    </div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>   
+              </div>
             </nav>
           </div>
         </div>
       </footer>
-    <form>
-        <h2 class="question">1. Kurie elementai yra blokiniai?</h2>
+      <form>
+
+      <h1 id="rules">Pasirink vieną iš trijų galimų variantų ir spausk "Patvirtinti"</h1>
+        <h2 class="question">1. Kuris elementas nėra inline tipo?</h2>
         <div class="answerList">
           <input type="radio" id="answerOne" name="questionOne" value="One">
-          <label for="answerOne">One</label><br>
+          <label for="answerOne">anchor</label><br>
           <input type="radio" id="answerTwo" name="questionOne" value="Two">
-          <label for="answerTwo">Two</label><br>
+          <label for="answerTwo">main</label><br>
           <input type="radio" id="answerThree" name="questionOne" value="Three">
-          <label for="answerThree">Three</label>
+          <label for="answerThree">button</label>
         </div>
         <button id="answerSubmit" type="button" onclick="display1()">Patvirtinti</button>
         <p id="disp1" style="color:red; font-size:18px; font-weight:bold;"></p>
@@ -164,6 +166,8 @@
         </div>  
         <button id="answerSubmit10" type="button" onclick="display10()">Patvirtinti</button>
         <p id="disp10" style="color:red; font-size:18px; font-weight:bold;"></p>
+        
+        <p class="endText">Suskaičiuok į kiek klausimų pavyko atsakyti teisingai ir spausk "Baigti"</p>
 
         <a class="endButton" href="result.html">
             <button type="button" id="endButton" onclick="countResult()">Baigti</button>

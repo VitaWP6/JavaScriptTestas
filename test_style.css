@@ -1,3 +1,10 @@
+h1 {
+    text-align: center;
+    padding: 10px;
+    text-decoration: underline;
+    text-decoration-color: #ff9aa270;
+    color: rgb(65, 64, 64);
+}
 form {
     margin: 10px;
     padding: 10px;
@@ -48,4 +55,11 @@ form button:hover {
 
 .endButton button:hover {
     cursor: pointer;
+}
+
+.endText {
+    text-align: center;
+    padding: 10px;
+    color: rgb(65, 64, 64);
+    font-size: 20px;
 }

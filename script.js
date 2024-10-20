@@ -158,7 +158,7 @@ function display10() {
   }
 }
 
-function getUserName(Vita) {
+function getUserName() {
   let personName = document.getElementById("person-name").value;
   let nameInput = document.getElementById("nameInput");
   nameInput.textContent = personName;
@@ -166,6 +166,12 @@ function getUserName(Vita) {
   startTestButton.addEventListener("click", getUserName, false);
 }
 
+function countResult() {
+  if (document.getElementById("disp1").innerHTML === "Teisingai") {
+    // document.getElementById("result").innerHTML = 111111;
+    console.log("1111111");
+  }
+}
 
 let result = 10;
 let text = document.getElementById("resultText");
